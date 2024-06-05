@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BattleshipLiteLibrary", "BattleshipLiteLibrary\BattleshipLiteLibrary.csproj", "{BF21162D-5F3A-458D-8BBF-B3B38619C523}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BF21162D-5F3A-458D-8BBF-B3B38619C523}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF21162D-5F3A-458D-8BBF-B3B38619C523}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF21162D-5F3A-458D-8BBF-B3B38619C523}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF21162D-5F3A-458D-8BBF-B3B38619C523}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {323CF64C-5719-4183-BDD5-FBCB52F0F730}
+	EndGlobalSection
+EndGlobal
