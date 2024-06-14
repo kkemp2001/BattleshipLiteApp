@@ -4,16 +4,17 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{BF21162D-5F3A-458D-8BBF-B3B38619C523}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BattleshipLiteLibrary</RootNamespace>
-    <AssemblyName>BattleshipLiteLibrary</AssemblyName>
+    <ProjectGuid>{89524117-CCE7-4ECE-96F4-FA3C9098171E}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>BattleshipLite</RootNamespace>
+    <AssemblyName>BattleshipLite</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -23,6 +24,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -41,11 +43,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GameLogic.cs" />
-    <Compile Include="Models\Enums.cs" />
-    <Compile Include="Models\GridSpotModel.cs" />
-    <Compile Include="Models\PlayerInfoModel.cs" />
+    <Compile Include="DisplayMethods.cs" />
+    <Compile Include="LogicMethods.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BattleshipLiteLibrary\BattleshipLiteLibrary.csproj">
+      <Project>{bf21162d-5f3a-458d-8bbf-b3b38619c523}</Project>
+      <Name>BattleshipLiteLibrary</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
